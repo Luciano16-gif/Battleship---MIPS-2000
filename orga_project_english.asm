@@ -58,38 +58,38 @@ player2_ships_health: .word 5, 4, 3, 2  # Current health of each ship for player
 
 # SYSTEM MESSAGES
 menu_title: .asciiz "\n=== BATTLESHIP ===\n"
-menu_option1: .asciiz "1. Jugador vs Jugador (PvP)\n"
-menu_option2: .asciiz "2. Jugador vs CPU (PvE)\n"
-menu_prompt: .asciiz "Selecciona una opcion (1 o 2): "
-invalid_option: .asciiz "Opcion invalida! Presiona 1 o 2.\n"
+menu_option1: .asciiz "1. Player vs Player (PvP)\n"
+menu_option2: .asciiz "2. Player vs CPU (PvE)\n"
+menu_prompt: .asciiz "Select an option (1 or 2): "
+invalid_option: .asciiz "Invalid option! Press 1 or 2.\n"
 jump: .asciiz "\n"
 
 # SETUP MESSAGES
-player1_msg: .asciiz "\n=== JUGADOR 1 (Tablero Superior) - Coloca tus barcos ===\n"
-player2_msg: .asciiz "\n=== JUGADOR 2 (Tablero Inferior) - Coloca tus barcos ===\n"
-ai_placing_msg: .asciiz "\n=== CPU colocando barcos... ===\n"
-game_setup_complete: .asciiz "\n=== CONFIGURACION COMPLETA ===\nPresiona cualquier tecla para comenzar la batalla!\n"
+player1_msg: .asciiz "\n=== PLAYER 1 (Superior borad) - Place your ships ===\n"
+player2_msg: .asciiz "\n=== PLAYER 2 (Inferior board) - Place your ships ===\n"
+ai_placing_msg: .asciiz "\n=== CPU Placing ships... ===\n"
+game_setup_complete: .asciiz "\n=== CONFIGURATION COMPLETED ===\nPress any key to start the battle!\n"
 
 # ATTACK MESSAGES
-attack_phase_msg: .asciiz "\n=== FASE DE ATAQUE ===\n"
-player1_attack_msg: .asciiz "\nJUGADOR 1 ataca el tablero inferior\n"
-player2_attack_msg: .asciiz "\nJUGADOR 2 ataca el tablero superior\n"
-hit_msg: .asciiz "\n¡IMPACTO! Dispara de nuevo.\n"
-miss_msg: .asciiz "\n¡FALLO! "
-attempts_msg: .asciiz "Intentos restantes: "
-ship_sunk_msg: .asciiz "\n¡HUNDIDO!\n"
-player1_wins_msg: .asciiz "\n¡GANA JUGADOR 1!\n"
-player2_wins_msg: .asciiz "\n¡GANA JUGADOR 2!\n"
-cpu_wins_msg: .asciiz "\n¡GANA LA CPU!\n"
-score_msg: .asciiz "Puntuacion: "
+attack_phase_msg: .asciiz "\n=== ATTACK PHASE ===\n"
+player1_attack_msg: .asciiz "\nPLAYER 1 attack the inferior board \n"
+player2_attack_msg: .asciiz "\nPLAYER 2 attack the superior board \n"
+hit_msg: .asciiz "\n¡IMPACT! Shoot again.\n"
+miss_msg: .asciiz "\n¡MISS! "
+attempts_msg: .asciiz "Remaining tries: "
+ship_sunk_msg: .asciiz "\n¡SUNKEN!\n"
+player1_wins_msg: .asciiz "\nPLAYER 1 WINS!\n"
+player2_wins_msg: .asciiz "\nPLAYER 2 WINS!\n"
+cpu_wins_msg: .asciiz "\nCPU WINS!\n"
+score_msg: .asciiz "Score: "
 game_over_msg: .asciiz "\nGAME OVER\n"
-area_attack_msg: .asciiz "\n*** ¡ATAQUE EN AREA! *** (3x3)\n"
+area_attack_msg: .asciiz "\n*** ATTACK IN AREA! *** (3x3)\n"
 
 # SCORE MESSAGES
-player1_score_msg: .asciiz "Jugador 1: "
-player2_score_msg: .asciiz "Jugador 2: "
+player1_score_msg: .asciiz "Player 1: "
+player2_score_msg: .asciiz "Player 2: "
 cpu_score_msg: .asciiz "CPU: "
-final_scores_title: .asciiz "\n=== PUNTUACIONES FINALES ===\n"
+final_scores_title: .asciiz "\n=== FINAL SCORES ===\n"
 
 # GAME COLORS
 white: .word 0xFFFFFF                   # White for misses
